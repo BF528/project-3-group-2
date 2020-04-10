@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#$ -P bf528
+#$ -cwd
+#$ -pe omp 16
+
+source /etc/bashrc
+
+module load subread/1.5.2
+
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1177981_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1177981_Aligned.sortedByCoord.out.bam
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1177982_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1177982_Aligned.sortedByCoord.out.bam
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1177983_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1177983_Aligned.sortedByCoord.out.bam
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1178008_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1178008_Aligned.sortedByCoord.out.bam
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1178009_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1178009_Aligned.sortedByCoord.out.bam
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1178010_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1178010_Aligned.sortedByCoord.out.bam
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1178014_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1178014_Aligned.sortedByCoord.out.bam
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1178021_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1178021_Aligned.sortedByCoord.out.bam
+featureCounts -T 16 -a /projectnb2/bf528/users/group2/project3/programmer/reference/rn4_refGene_20180308.gtf -o $OUT SRR1178047_Aligned /projectnb2/bf528/users/group2/project3/programmer/bamfiles/SRR1178047_Aligned.sortedByCoord.out.bam
